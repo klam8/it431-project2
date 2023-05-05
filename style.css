@@ -1,0 +1,174 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  max-width: auto;
+  margin: 0 auto;
+  background-color: #6ecfa6;
+}
+
+#navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  background-image: linear-gradient(to top right, #6ecfa6, #27343a);
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 16px;
+}
+
+.nav-item.active {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to top right, #6ecfa6, #27343a);
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 65px 17px;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #fff;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+  border-radius: 10%;
+}
+
+li{
+  color:#fff;
+}
+
+.banner img{
+  width: 90%;
+  border-radius: 50%;
+}
+
+.banner-left {
+  flex: 1;
+  text-align: center;
+}
+
+.banner-right {
+  flex: 2;
+  padding: 20px;
+}
+
+@media (max-width: 650px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner-left {
+    flex-direction: unset;
+    width: 100%;
+  }
+  
+  .banner-right {
+    flex-direction: unset;
+    width: 90%;
+  }
+}
+
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 100%;
+  max-width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 38px;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .card {
+      max-width: 100%;
+  }
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+}
+
+footer{
+  text-align: center;
+}
